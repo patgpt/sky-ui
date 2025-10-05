@@ -12,6 +12,6 @@ Visit http://sky-ui.com to view the documentation.
 
 If you would like to contribute to Sky UI, please reach out to me on [Twitter](https://twitter.com/slopwhisperer).
 
-## License
+## License :)
 
 Licensed under the [MIT license](https://github.com/patgpt/sky-ui/blob/main/LICENSE).
