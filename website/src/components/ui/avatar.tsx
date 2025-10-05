@@ -2,8 +2,8 @@ import { forwardRef } from 'react'
 import * as StyledAvatar from './styled/avatar'
 
 export interface AvatarProps extends StyledAvatar.RootProps {
-  name?: string | undefined | null
-  src?: string | undefined | null
+  name?: string
+  src?: string
 }
 
 export const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
@@ -11,10 +11,8 @@ export const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
 
   return (
     <StyledAvatar.Root ref={ref} {...rootProps}>
-      <StyledAvatar.Fallback>{name ? getInitials(name) : <UserIcon />}</StyledAvatar.Fallback>
-      {src && (
-        <StyledAvatar.Image src={src} alt={name ?? 'User Profile'} referrerPolicy="no-referrer" />
-      )}
+      <StyledAvatar.Fallback>{getInitials(name) || <UserIcon />}</StyledAvatar.Fallback>
+      <StyledAvatar.Image src={src} alt={name} />
     </StyledAvatar.Root>
   )
 })

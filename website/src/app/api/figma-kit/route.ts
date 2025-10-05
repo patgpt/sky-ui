@@ -7,7 +7,7 @@ export const GET = async (req: NextRequest) => {
   const orderId = searchParams.get('order_id')
 
   if (!orderId) {
-    return Response.redirect('https://sky-ui.com')
+    return Response.redirect(process.env.NEXT_PUBLIC_SITE_URL || 'https://sky-ui.com')
   }
 
   try {
@@ -29,6 +29,6 @@ export const GET = async (req: NextRequest) => {
 
     return Response.redirect(isValid ? FIGMA_KIT_URL : 'https://sky-ui.com')
   } catch (error) {
-    return Response.redirect('https://sky-ui.com')
+    return Response.redirect(process.env.NEXT_PUBLIC_SITE_URL || 'https://sky-ui.com')
   }
 }

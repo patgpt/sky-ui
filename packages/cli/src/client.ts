@@ -2,7 +2,7 @@ import { FetchHttpClient, HttpClient, HttpClientResponse } from '@effect/platfor
 import { Effect, Schema } from 'effect'
 import type { Config } from './get-config'
 
-const API_URL = 'https://sky-ui.com/registry/latest'
+const API_URL = 'https://sky-ui.yellowdog.digital/registry/latest'
 
 const Utils = Schema.Array(
   Schema.Struct({

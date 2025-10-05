@@ -1,5 +1,5 @@
 {
-  "$schema": "https://sky-ui.com/registry/latest/schema.json",
+  "$schema": "https://sky-ui.yellowdog.digital/registry/latest/schema.json",
   "jsFramework": "react",
   "outputPath": "./src/components/ui"
 }

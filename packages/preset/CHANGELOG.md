@@ -27,7 +27,7 @@ export default defineConfig({
 })
 ```
 
-If you run into any issues, check out the updated [getting started guide](https://sky-ui.com/react/docs/overview/getting-started#setup-guide).
+If you run into any issues, check out the updated [getting started guide](https://sky-ui.yellowdog.digital/react/docs/overview/getting-started#setup-guide).
 
 ## [0.43.1] - 2024-11-23
 
@@ -70,7 +70,7 @@ Here's how this change impacts usage:
 ```
 
 - Improved consistency and scalability by refining the Sky UI Preset setup in the Panda
-  configuration. [Learn more in the docs](https://sky-ui.com/react/docs/theme/customize).
+  configuration. [Learn more in the docs](https://sky-ui.yellowdog.digital/react/docs/theme/customize).
 
 ````diff
  import { defineConfig } from '@pandacss/dev'
@@ -393,7 +393,7 @@ For more information on the reasoning behind this change, please refer to the
 - Renamed `placement` prop to `variant` in `Drawer` component for better consistency with other CSS
   frameworks.
 - Renamed `Label` to `FormLabel`
-- Revised `Avatar` component. Check out the [docs](https://sky-ui.com/docs/panda/components/avatar)
+- Revised `Avatar` component. Check out the [docs](https://sky-ui.yellowdog.digital/docs/panda/components/avatar)
   for more details.
 
 ### Fixed
@@ -881,4 +881,4 @@ export default defineConfig({
 
 ### Added
 
-- Initial Release of [Sky UI](https://sky-ui.com)
+- Initial Release of [Sky UI](https://sky-ui.yellowdog.digital)

@@ -1,7 +1,7 @@
-import path from 'node:path'
 import * as p from '@clack/prompts'
 import { Effect, Schema, pipe } from 'effect'
 import fs from 'fs-extra'
+import path from 'node:path'
 import { packageDirectorySync } from 'pkg-dir'
 
 const Config = Schema.Struct({
@@ -35,7 +35,7 @@ export const getConfig = (): Effect.Effect<Config, never, never> =>
               return pipe(
                 Effect.promise(promptConfig),
                 Effect.map(({ framework, components, recipes }) => ({
-                  $schema: 'https://sky-ui.com/registry/latest/schema.json',
+                  $schema: 'https://sky-ui.yellowdog.digital/registry/latest/schema.json',
                   framework,
                   paths: {
                     components,

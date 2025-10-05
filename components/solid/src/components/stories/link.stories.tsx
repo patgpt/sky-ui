@@ -7,4 +7,4 @@ const meta: Meta = {
 
 export default meta
 
-export const Base = () => <Link href="https://sky-ui.com">Sky UI</Link>
+export const Base = () => <Link href="https://sky-ui.yellowdog.digital">Sky UI</Link>

@@ -13,7 +13,7 @@ export default meta
 
 export const Base = () => {
   return (
-    <Clipboard.Root value="https://sky-ui.com">
+    <Clipboard.Root value="https://sky-ui.yellowdog.digital">
       <Clipboard.Label asChild>
         <FormLabel>Copy this link</FormLabel>
       </Clipboard.Label>

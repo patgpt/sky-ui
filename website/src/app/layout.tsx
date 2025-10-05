@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
-import Script from 'next/script'
 import { cx } from 'styled-system/css'
 import { Navbar } from '~/components/navigation/navbar'
 import { inter, jakarta, outfit, raleway, roboto } from './fonts'
 import './global.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sky-ui.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://sky-ui.com'),
   title: {
     default: 'Home | Sky UI',
     template: '%s | Sky UI',
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://sky-ui.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://sky-ui.com',
     description:
       'Beautifully designed components built with Ark UI and Panda CSS that work with a variety of JS frameworks.',
   },
@@ -47,7 +46,7 @@ export default function RootLayout(props: Props) {
       suppressHydrationWarning
     >
       <head>
-        <Script src="https://plausible.io/js/plausible.js" data-domain="sky-ui.com" />
+        {/* <Script src="https://plausible.io/js/plausible.js" data-domain="sky-ui.com" /> */}
         <style id="sky-ui-gray" />
         <style id="sky-ui-accent" />
       </head>

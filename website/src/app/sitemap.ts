@@ -1,8 +1,8 @@
-import { join } from 'node:path'
-import type { MetadataRoute } from 'next'
 import { pages } from '.velite'
+import type { MetadataRoute } from 'next'
+import { join } from 'node:path'
 
-const baseUrl = 'https://sky-ui.com'
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sky-ui.com'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const docPages = pages.map((doc) => ({

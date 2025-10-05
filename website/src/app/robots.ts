@@ -5,7 +5,7 @@ const robots = (): MetadataRoute.Robots => ({
     userAgent: '*',
     allow: '/',
   },
-  sitemap: 'https://sky-ui.com/sitemap.xml',
+  sitemap: `${process.env.NEXT_PUBLIC_SITE_URL}/sitemap.xml`,
 })
 
 export default robots

@@ -6,7 +6,7 @@ import { Input } from '~/components/ui/input'
 
 export const Demo = (props: Clipboard.RootProps) => {
   return (
-    <Clipboard.Root value="https://sky-ui.com" {...props}>
+    <Clipboard.Root value="https://sky-ui.yellowdog.digital" {...props}>
       <Clipboard.Label asChild={(labelProps) => <FormLabel {...labelProps()} />}>
         Copy this link
       </Clipboard.Label>
