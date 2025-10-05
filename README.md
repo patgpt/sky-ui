@@ -2,7 +2,7 @@
 
 Beautifully designed components built with [Ark UI](https://ark-ui.com) and [Panda CSS](https://panda-css.com) that work with a variety of JS frameworks.
 
-![Sky UI OG Image](https://sky-ui.com/opengraph-image.png)
+![Sky UI OG Image](https://vercel.com/yellowdog/sky-ui/opengraph-image.png)
 
 ## Documentation
 
